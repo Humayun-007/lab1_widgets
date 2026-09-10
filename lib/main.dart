@@ -105,10 +105,18 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: .center,
           children: [
             const Text('You have pushed the button this many times:'),
-            Text(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            const SizedBox(width: 8),
+            const Icon(Icons.favorite,color: Colors.red),
+            ],
+            ),
+
             const Text ('Keep Tapping :)',
             style:TextStyle(
               fontSize: 18,
@@ -120,7 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.ac_unit_rounded),
       ),
     );
   }
