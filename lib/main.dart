@@ -109,7 +109,11 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            const Text ('Keep Tapping :)')
+            const Text ('Keep Tapping :)',
+            style:TextStyle(
+              fontSize: 18,
+              fontStyle: FontStyle.italic,
+              color: Colors.grey,),)
           ],
         ),
       ),
